@@ -8,13 +8,13 @@ Configurar o Virt-Manager/KVM para que as máquinas virtuais utilizem a mesma re
 
 # Cenário
 
-## Antes (NAT padrão)
+### Antes (NAT padrão)
 
 ```text
 VM -> virbr0 (NAT) -> Host -> Rede
 ```
 
-## Depois (Bridge)
+### Depois (Bridge)
 
 ```text
 VM -> br0 -> Interface Física -> Rede
@@ -27,13 +27,6 @@ Nesse modo:
 - Melhor para:
   - Laboratórios
   - Servidores
-  - Mikrotik
-  - Cisco
-  - OSPF
-  - VLANs
-  - IPv6
-  - DHCP real
-
 ---
 
 ### 1. Verificar interface de rede
